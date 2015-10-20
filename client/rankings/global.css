@@ -1,0 +1,71 @@
+body {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.newMatch input {
+	margin-left: 5px;
+	margin-right: 10px;
+	height: 20px;
+}
+
+input, body {
+	font-family: 'Andada', sans-serif;
+}
+
+input, button {
+	font-size: 1em;
+	border-radius: 3px;
+	border: 1px solid black;
+}
+
+button {
+	background-color: white;
+	cursor: pointer;
+}
+
+.rankHeader, button {
+	font-family: 'Lobster', sans-serif;
+}
+
+.newMatch {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.rankHeader {
+	font-size: 1.5em;
+	border-bottom: 1px solid black;
+	width: 180px;
+	margin-bottom: 20px;
+}
+
+.rankings {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.player {
+	position: relative;
+	height: 30px;
+}
+
+.rank, .name, .elo {
+	position: absolute;
+}
+
+.rank {
+	left: 0px;
+	background-color: #ddd;
+	width: 20px;
+	text-align: center;
+	border-radius: 3px;
+}
+
+.name {
+	left: 30px;
+}
+
+.elo {
+	left: 180px;
+}
