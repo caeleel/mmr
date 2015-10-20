@@ -8,9 +8,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="global.css">
-		<link href='https://fonts.googleapis.com/css?family=Andada' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="global.css">
+    <link href='https://fonts.googleapis.com/css?family=Andada' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div id="content"></div>
@@ -49,16 +49,16 @@
           var winner = $("#winner").val();
           var loser = $("#loser").val();
           $.ajax({
-						url: "/match",
-						type: "POST",
-						data: JSON.stringify({
-							"winner": winner,
-							"loser": loser
-						}),
-						success: function() {
-							this.loadRankings();
-						}.bind(this)
-					});
+            url: "/match",
+            type: "POST",
+            data: JSON.stringify({
+              "winner": winner,
+              "loser": loser
+            }),
+            success: function() {
+              this.loadRankings();
+            }.bind(this)
+          });
         },
         render: function() {
           var rankings = this.state.rankings.map(function(player, i) {
